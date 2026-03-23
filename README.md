@@ -1,6 +1,8 @@
 # Vision Language Models as Explainable Classifiers for Skin Lesions
 This is the project I submitted to the Terra North Jersey STEM Fair in 2026. It finetunes Qwen 3 VL 30b A3b with reinforcement learning to classify skin lesions as benign or malignant and explain rationale using the Tinker platform. It is also specifically trained to respond to human pushback by either defending or revising its response, follow specific formatting instructions that a user might give it, and use a zoom tool to take a better look at parts of an image. This technique is flexible and can be easily adapted to other tasks by swapping datasets and modifying the rubric used for grading explanations. The full slides for my project, as well as the poster I presented at the fair, are in this repository as PDFs.
 
+The trained model can be found here: https://huggingface.co/sr5434/skin-cancer-classifier
+
 ## Quick start
 
 1. Download this dataset: https://www.kaggle.com/datasets/tomooinubushi/all-isic-data-20240629 and save its contents to a directory called archive in the root of this repository.
