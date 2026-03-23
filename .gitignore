@@ -1,0 +1,12 @@
+.env
+.venv
+codex_notes
+data
+plans
+reorder_manifests
+checkpoint_best
+experiments
+tinker-cookbook
+__pycache__
+*.csv
+clear_checkpoints.sh
