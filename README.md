@@ -1,11 +1,13 @@
 # Vision Language Models as Explainable Classifiers for Skin Lesions
-This is the project I submitted to the Terra North Jersey STEM Fair in 2026. I also gave a short talk about it at the Bridgewater-Raritan High School AI/ML club. It finetunes Qwen 3 VL 30b A3b with reinforcement learning to classify skin lesions as benign or malignant and explain rationale using the Tinker platform. It is also specifically trained to respond to human pushback by either defending or revising its response, follow specific formatting instructions that a user might give it, and use a zoom tool to take a better look at parts of an image. This technique is flexible and can be easily adapted to other tasks by swapping datasets and modifying the rubric used for grading explanations. 
+This project trains a vision-language model using reinforcement learning to produce diagnostic classifications with interpretable reasoning for skin lesion images. The model is optimized not just for accuracy, but for explanation quality, robustness to user feedback, and interactive analysis (zoom tool). 
 
-Poster (presented to judges): https://github.com/sr5434/VLMSkinLesionClassifier/blob/main/Poster.pdf
+I submitted this to the Terra North Jersey STEM Fair in 2026 and gave a short talk about it at the Bridgewater-Raritan High School AI/ML club. The project won me second alternate for a scholarship to a Kean University summer research program. It finetunes Qwen 3 VL 30b A3b with reinforcement learning to classify skin lesions as benign or malignant and explain rationale using the Tinker platform. My results, samples, and methods can be found in the poster and slideshow. The slideshow also includes ablations and more technical details.
 
-Slideshow (not presented to judges; more detailed): https://github.com/sr5434/VLMSkinLesionClassifier/blob/main/Slides.pdf
+📄 Poster (presented to judges): https://github.com/sr5434/VLMSkinLesionClassifier/blob/main/Poster.pdf
 
-The trained model can be found here: https://huggingface.co/sr5434/skin-cancer-classifier
+📊 Slideshow (not presented to judges): https://github.com/sr5434/VLMSkinLesionClassifier/blob/main/Slides.pdf
+
+🤖 The trained model can be found here: https://huggingface.co/sr5434/skin-cancer-classifier
 
 ## Quick start
 
@@ -30,6 +32,21 @@ The trained model can be found here: https://huggingface.co/sr5434/skin-cancer-c
 6. Train
 
 ```python train.py```
+
+## Key Contributions
+
+- Reinforcement learning with explanation and diagnosis rewards
+- Trained to respond to user pushback by defending or revising previous responses
+- Provided with a zoom tool for localized visual reasoning
+- Taught to adhere to user formatting instructions
+
+## Results
+
+- Accuracy: 82.8%
+- F1 score: 84.4%
+- p-value: 1.38e-28
+- Compared to SFT baseline: +46.1% accuracy improvement
+- RL improves explanation quality while maintaining classification performance
 
 ## Acknowledgements
 I would like to thank Thinking Machines for funding this research. Without their support, this work would not be possible.
