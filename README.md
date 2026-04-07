@@ -15,23 +15,33 @@ I submitted this to the Terra North Jersey STEM Fair in 2026 and gave a short ta
 
 2. Reformat the data, prepare splits, and balance classes:
 
-```python prepare_data.py```
+```bash
+python prepare_data.py
+```
 
 3. Resize images to 256x256:
 
-```python resize_images.py```
+```bash
+python resize_images.py
+```
 
 4. Generate diverse prompts:
 
-```python prompt_gen.py```
+```bash
+python prompt_gen.py
+```
 
 5. Order data in descending order of 4-shot accuracy:
 
-```profile_correctness_reorder.py```
+```bash
+profile_correctness_reorder.py
+```
 
 6. Train
 
-```python train.py```
+```bash
+python train.py
+```
 
 ## Key Contributions
 
